@@ -1,18 +1,58 @@
 ### Xcode ###
-## User settings
+# Xcode
+build/
+DerivedData/
+*.xcworkspace
+!default.xcworkspace
 xcuserdata/
+*.xcuserstate
+*.moved-aside
+*.xcuserdatad/
 
-## Xcode 8 and earlier
+# SwiftPM
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Accio dependency manager
+Dependencies/
+.checkouts/
+.swiftpm/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Xcode automatic backup files
 *.xcscmblueprint
-*.xccheckout
+*.xcuserstate
 
-### Xcode Patch ###
-*.xcodeproj/*
-!*.xcodeproj/project.pbxproj
-!*.xcodeproj/xcshareddata/
-!*.xcodeproj/project.xcworkspace/
-!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-**/xcshareddata/WorkspaceSettings.xcsettings
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# IDE-specific
+.idea/
+*.hmap
+
+# Misc
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Index
+.package.resolved
+
+# Xcode Cloud
+ci_post_clone.sh
+ci_pre_xcodebuild.sh
+ci_post_xcodebuild.sh
 
 .DS_Store
